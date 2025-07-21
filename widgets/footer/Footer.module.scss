@@ -1,0 +1,44 @@
+.footer {
+  background-color: $color-layout;
+  font-family: $font-primary;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 25px;
+}
+
+.links {
+  font-weight: $font-weight-medium;
+  display: flex;
+  gap: 35px;
+
+  a {
+    color: $text-link;
+    text-decoration: none;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 28px;
+  height: 28px;
+}
+
+.text {
+  color: $text-link;
+  font-size: 16px;
+}

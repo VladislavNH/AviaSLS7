@@ -1,0 +1,166 @@
+.container {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.mainTitle {
+  margin: 0;
+  font-size: 20px;
+  color: $color-text-dark;
+}
+.subTitle {
+  margin-top: 4px;
+  font-size: 14px;
+  color: $color-text-muted;
+}
+.subsidy {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: $color-subsidy;
+  font-size: 14px;
+}
+
+.carouselWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+}
+.dateCard {
+  flex: 0 0 120px;
+  margin-right: 8px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  cursor: pointer;
+  color: $color-text-muted;
+  transition:
+    border-color 0.2s,
+    background 0.2s,
+    color 0.2s;
+}
+.dateCard:hover {
+  border-color: $color-border-hover;
+}
+.selected {
+  border-color: $color-selected-border;
+  background: $color-selected-bg;
+  color: $color-text-dark;
+}
+.weekday {
+  font-size: 12px;
+}
+.day {
+  font-size: 16px;
+  margin: 4px 0;
+}
+.price {
+  font-size: 14px;
+}
+.navButton {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: $color-bg;
+  border-radius: 50%;
+  box-shadow: 0 0 4px $shadow-button;
+  font-size: 18px;
+  line-height: 1;
+  color: $color-text-muted;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+.navButton:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.prev {
+  margin-right: 8px;
+}
+.next {
+  margin-left: 8px;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.classSwitch {
+  display: inline-flex;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.classBtn {
+  padding: 8px 20px;
+  border: none;
+  background: $color-class-btn-bg;
+  font-size: 14px;
+  color: $color-text-muted;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.classBtn:hover {
+  background: $color-class-btn-hover;
+}
+.active {
+  background: $color-class-active-bg;
+  color: $color-text-dark;
+}
+
+.filtersGroup {
+  display: flex;
+  gap: 8px;
+}
+.filter {
+  padding: 8px 16px;
+  border: 1px solid $color-border;
+  border-radius: 8px;
+  background: $color-bg;
+  font-size: 14px;
+  color: $color-text-default;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+.caret {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.sort {
+  margin-left: auto;
+}
+
+.sub {
+  margin-top: 4px;
+  font-size: 14px;
+  color: $color-text-muted;
+}
+.route {
+  margin: 0;
+  font-size: 14px;
+  color: $color-text-muted;
+}

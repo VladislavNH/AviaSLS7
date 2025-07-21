@@ -1,0 +1,17 @@
+export const TestDateOption: DateOption[] = [
+  { weekday: 'вт', date: '17 июн', price: 12101 },
+  { weekday: 'ср', date: '18 июн', price: 12101 },
+  { weekday: 'чт', date: '19 июн', price: 12101 },
+  { weekday: 'пт', date: '20 июн', price: 14496 },
+  { weekday: 'сб', date: '21 июн', price: 16118 },
+  { weekday: 'вт', date: '17 июн', price: 12101 },
+  { weekday: 'ср', date: '18 июн', price: 12101 },
+  { weekday: 'чт', date: '19 июн', price: 12101 },
+  { weekday: 'пт', date: '20 июн', price: 14496 },
+  { weekday: 'сб', date: '21 июн', price: 16118 },
+  { weekday: 'вт', date: '17 июн', price: 12101 },
+  { weekday: 'ср', date: '18 июн', price: 12101 },
+  { weekday: 'чт', date: '19 июн', price: 12101 },
+  { weekday: 'пт', date: '20 июн', price: 14496 },
+  { weekday: 'сб', date: '21 июн', price: 16118 },
+];
