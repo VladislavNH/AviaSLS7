@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.paginationButton {
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 36px;
+  background-color: transparent;
+  border: 1px solid $color-border-table;
+  color: rgba(0, 0, 0, 0.75);
+
+  font-style: italic;
+}
+
+.paginationButton:hover:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.paginationButton.active {
+  background-color: $color-primary;
+  color: white;
+}
+
+.paginationButton:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.paginationEllipsis {
+  padding: 6px 12px;
+}

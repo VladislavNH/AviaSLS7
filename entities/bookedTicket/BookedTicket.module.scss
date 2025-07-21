@@ -1,0 +1,220 @@
+<<<<<<< HEAD
+@import '../../shared/styles/text-variables.scss';
+@import '../../shared/styles/color-variables.scss';
+
+=======
+>>>>>>> feature/tyda-obratno
+.flightCard {
+  font-family: $font-primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  border-radius: 16px;
+  border: 1px solid $color-border;
+  box-shadow: 0 4px 10px -2px rgba(34, 42, 55, 0.13);
+}
+
+.dateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(229, 245, 255);
+  border-radius: 8px;
+  padding: 12px 28px 18px;
+  margin-right: 32px;
+  box-sizing: border-box;
+  max-height: 130px;
+  font-weight: $font-weight-bold;
+}
+
+.dayOfWeek {
+  font-size: $text-base;
+  color: black;
+  line-height: 24px;
+}
+
+.date {
+  font-size: 44px;
+  font-weight: bold;
+  color: black;
+  line-height: 52px;
+  text-align: center;
+  min-width: 2ch;
+}
+
+.month {
+  font-size: $text-sm;
+  color: black;
+  line-height: 20px;
+}
+
+.infoTable {
+  min-width: 456px;
+  margin-right: 32px;
+}
+
+.flightInfoHeader {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+
+.routeInfo,
+.routeDuration {
+  display: flex;
+  justify-content: space-between;
+}
+
+.routeDuration {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-text-secondary;
+}
+
+.routeInfo {
+  padding-top: 18px;
+  margin-bottom: 8px;
+}
+
+.airline {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  line-height: 20px;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #7a869a;
+  .logo {
+    width: 25px;
+    height: 25px;
+    background-color: #d4e400;
+    border-radius: 50%;
+    background-image: url('/icons/plane-white.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+}
+
+.departureTime,
+.arrivalTime {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #222a37;
+}
+
+.routePoints {
+  padding: 0 6px;
+  position: relative;
+  display: inline-block;
+  line-height: 24px;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222a37;
+}
+
+.route {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  min-width: 176px;
+  margin: 0 auto;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    display: block;
+    width: 48%;
+    height: 2px;
+    background-image: linear-gradient(90deg, #d0d6e1 30%, rgba(255, 255, 255, 0) 0);
+    background-position: top;
+    background-size: 5px 1.5px;
+    background-repeat: repeat-x;
+  }
+}
+
+.directFlight {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: $text-sm;
+  line-height: 20px;
+  color: $color-primary;
+  margin-top: 0.3rem;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  &:hover {
+    border-color: transparent !important;
+    cursor: pointer;
+  }
+}
+
+.priceContainer {
+  display: block;
+  height: auto;
+  padding: 20px 12px 16px;
+  min-width: 285px;
+  margin-right: 32px;
+  border-radius: 16px;
+  background-color: rgb(239, 239, 239);
+}
+
+.flightClass {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  min-height: 40px;
+  color: $color-text-primary;
+  .tariffName {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-right: 8px;
+  }
+  .tariffIcons {
+    display: flex;
+    gap: 8px;
+    color: $color-primary;
+  }
+}
+
+.price {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $color-text-primary;
+}
+
+.remainingSeats {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 6px;
+  color: $color-text-secondary;
+}
+
+.buttonEdit {
+  width: 32px;
+  height: 32px;
+  align-self: flex-start;
+  border-radius: 8px;
+  background-color: rgb(239, 239, 239);
+  border: none;
+  color: $color-text-secondary;
+  padding: 0;
+  &:hover {
+    cursor: pointer;
+  }
+}

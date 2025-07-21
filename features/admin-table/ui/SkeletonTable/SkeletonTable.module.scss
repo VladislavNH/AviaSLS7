@@ -1,0 +1,76 @@
+@use '../../../../shared/styles/color-variables.scss' as *;
+@use '../../../../shared/styles/text-variables.scss' as *;
+@use '../../../../shared/styles/mixins.scss' as *;
+
+.skeletonContainer {
+  font-family: $font-table;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: start;
+  justify-content: center;
+  overflow: hidden;
+  min-width: 1080px;
+
+  font-style: italic;
+}
+
+.skeletonWrapper {
+  height: 600px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.title {
+  font-size: $text-xl;
+}
+
+.skeletonHeader {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.skeletonTh,
+.skeletonTd {
+  display: table-cell;
+  height: 100px; /* для th */
+  padding: 12px 15px;
+  @include apply-skeleton-linear-gradient;
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border: 1px solid $color-border-table;
+}
+
+.selector {
+  width: 50px;
+}
+
+.skeletonHeader,
+.skeletonBody {
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: auto;
+}
+
+.skeletonRow {
+  display: table-row;
+}
+
+.skeletonTd {
+  height: 49px; /* для td */
+}
+
+.pagination {
+  min-height: 50px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

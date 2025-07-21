@@ -1,0 +1,135 @@
+<<<<<<< HEAD
+@import '../../shared/styles/text-variables.scss';
+@import '../../shared/styles/color-variables.scss';
+
+=======
+>>>>>>> feature/tyda-obratno
+.checkoutMenuContainer {
+  font-family: $font-primary;
+  padding: 16px;
+  border-radius: 16px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  background-color: #f8f8f8;
+}
+
+.priceEvaluation {
+  margin-top: 12px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed grey;
+  .priceEvaluation__header {
+    display: flex;
+    align-items: center;
+  }
+  .priceEvaluation__content {
+    font-size: $text-sm;
+    padding: 32px 0 0 28px;
+  }
+}
+
+.content__container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content__routeDescription {
+  color: $color-text-secondary;
+}
+
+.title__route {
+  display: flex;
+  gap: 10px;
+}
+
+.termsLink {
+  display: block;
+  padding-top: 12px;
+  color: $color-text-secondary;
+  text-decoration: none;
+}
+
+.toggleForm__title {
+  display: flex;
+  padding-bottom: 20px;
+  font-weight: $font-weight-medium;
+  padding-bottom: 16px;
+  justify-content: space-between;
+}
+
+.help {
+  color: $color-primary;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  text-decoration: underline;
+  padding: 4px 0 0 16px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.toggleForm__closed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: $color-text-secondary;
+  font-size: $text-sm;
+  padding: 16px 0;
+  border-bottom: 1px dashed grey;
+}
+
+.toggleForm__open {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px dashed grey;
+  padding: 16px 0;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  width: 116px;
+  padding-left: 12px;
+}
+
+.price {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  min-width: 56px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: $color-primary;
+  margin-top: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.closeBtn {
+  width: 20px;
+  height: 20px;
+  color: grey;
+  &:hover {
+    cursor: pointer;
+  }
+}

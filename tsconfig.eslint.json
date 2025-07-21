@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "*.config.ts",
+    "setupVitest.ts",
+    "vitest.setup.ts",
+    "declarations.d.ts"
+  ],
+  "compilerOptions": {
+    "noEmit": true
+  }
+}
